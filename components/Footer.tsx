@@ -10,7 +10,7 @@ const Footer = () => {
       className="container mx-auto grid grid-cols-1 grid-rows-3 bg-softRed py-4 md:grid-cols-3"
     >
       <div className="flex items-center justify-center">
-        <Logo fill="#fff" className="object-cover object-center"/>
+        <Logo fill="#fff" className="object-cover object-center" />
       </div>
       <div className="flex justify-center">
         <ul className="gap-4 text-white">
