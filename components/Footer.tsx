@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="container mx-auto grid grid-cols-1 grid-rows-3 bg-softRed py-4 md:grid-cols-3"
+      className="container mx-auto grid grid-cols-1 grid-rows-3 bg-softRed py-4 md:grid-cols-3 md:grid-rows-1"
     >
       <div className="flex items-center justify-center">
         <Logo fill="#fff" className="object-cover object-center" />
