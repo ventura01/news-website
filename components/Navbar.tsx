@@ -28,13 +28,17 @@ const Navbar = () => {
           <Image src="/images/logo.svg" alt="Logo" height={75} width={75} />
         </div>
         <ul
-          className={` items-center text-sm text-darkGrayishBlue md:static md:flex md:gap-10 ${open ? "absolute right-3 bg-offWhite px-14 transition-all duration-500 ease-in" : "hidden"}`}
+          className={`items-center text-sm text-darkGrayishBlue md:static md:flex md:gap-10 ${
+            open
+              ? "absolute right-3 bg-offWhite px-14 transition-all duration-500 ease-in"
+              : "hidden"
+          }`}
         >
           {navLinks.map((link) => (
             <Link
               href={link.route}
               key={link.name}
-              onClick={() => setOpen(!open)}
+              onClick={() => setOpen(false)}
             >
               <li className="my-8 hover:text-softOrange">{link.name}</li>
             </Link>
