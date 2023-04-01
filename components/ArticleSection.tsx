@@ -33,7 +33,7 @@ const ArticleSection = () => {
   return (
     <section
       id="article"
-      className="container mb-10 grid grid-cols-1 gap-5 px-3 md:px-0 md:mx-auto md:grid-cols-3 md:gap-8"
+      className="container mb-10 grid grid-cols-1 gap-5 px-3 md:mx-auto md:grid-cols-3 md:gap-8 md:px-0"
     >
       {articles.map((article) => (
         <div key={article.num} className="flex">
@@ -43,14 +43,14 @@ const ArticleSection = () => {
               alt={article.title}
               height={122}
               width={96}
-              className="object-cover object-center"
+              className="h-full w-full object-cover object-center"
             />
           </div>
           <div className="flex flex-col pl-5">
             <h3 className="mb-1 text-2xl font-bold text-grayishBlue ">
               0{article.num}
             </h3>
-            <h4 className="cursor-pointer text-base md:text-lg font-bold hover:text-softRed">
+            <h4 className="cursor-pointer text-base font-bold hover:text-softRed md:text-lg">
               {article.title}
             </h4>
             <p className="text-sm text-darkGrayishBlue">{article.desc}</p>
